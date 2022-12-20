@@ -1,3 +1,6 @@
-from django.shortcuts import render
+""" Hello Views """
+from django.http import HttpResponse
 
-# Create your views here.
+def home(_):
+    """ Home """
+    return HttpResponse("Hello, Django!")
